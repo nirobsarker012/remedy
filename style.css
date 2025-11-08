@@ -334,6 +334,72 @@ swiper-container {
   opacity: 1;
 }
 
+/* BRAND SECTION DESIGN START */
+.brand-heading {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  color: rgba(46, 42, 57, 0.35);
+  margin: 135px 0 34px 0;
+  max-width: 1002px;
+}
+
+.brand-heading-color {
+  color: var(--color-text-primary);
+}
+
+.brand-subtitle-container {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.dash {
+  display: block;
+  width: 45px;
+  height: 1px;
+  background-color: var(--color-primary);
+}
+
+.brand-subtitle {
+  color: var(--color-primary);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.brand-content-container {
+  display: grid;
+  grid-template-columns: minmax(250px, 383px) minmax(300px, 418px) minmax(
+      250px,
+      367px
+    );
+  justify-content: space-between;
+  align-items: center;
+}
+/* BRAND SECTION DESIGN END */
+
+.review-title
+  .product-desc
+  .product-info
+  .product-bundle-heading
+  .product-saving-title {
+  color: var(--color-paragraph);
+} /* Line height */
+.product-saving-title
+  .pack-title
+  .product-bundle-heading
+  .product-info
+  .price
+  .product-saving-price
+  .btn-primary
+  .company-policy-title
+  .product-faq-title
+  .brand-subtitle {
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
 /* ===================== RESPONSIVE ===================== */
 
 /* Laptop */
@@ -360,6 +426,11 @@ swiper-container {
 
   .company-policy-container {
     row-gap: 30px;
+  }
+
+  .brand-heading {
+    font-size: 44px;
+    max-width: 800px;
   }
 }
 
@@ -410,6 +481,11 @@ swiper-container {
 
   .product-bundle-cards {
     justify-content: center;
+  }
+
+  .brand-heading {
+    max-width: 660px;
+    margin: 50px 0 34px 0;
   }
 }
 
@@ -472,5 +548,18 @@ swiper-container {
   .product-bundle-cards {
     flex-direction: column;
     gap: 20px;
+  }
+
+  .brand-heading {
+    font-size: 30px;
+    margin: 50px 0 28px 0;
+  }
+
+  .brand-subtitle {
+    font-size: 16px;
+  }
+
+  .brand-subtitle-container {
+    gap: 16px;
   }
 }
