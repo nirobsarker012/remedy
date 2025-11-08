@@ -5,8 +5,288 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Remedy</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
-    <h1>Hello Word!</h1>
+    <!-- PRODUCT DETAILS START  -->
+    <section class="product-details">
+      <div class="container">
+        <div class="product-container">
+          <!-- PRODUCT IMAGE START -->
+          <div class="product-images-container">
+            <div class="product-gallery">
+              <!-- Main Swiper -->
+              <swiper-container
+                class="mySwiper"
+                thumbs-swiper=".mySwiper2"
+                space-between="10"
+                navigation="true"
+              >
+                <swiper-slide>
+                  <img src="/assets/dummyProduct.jpg" alt="Main Image 1" />
+                </swiper-slide>
+                <swiper-slide>
+                  <img src="/assets/dummyProduct.jpg" alt="Main Image 2" />
+                </swiper-slide>
+                <swiper-slide>
+                  <img src="/assets/dummyProduct.jpg" alt="Main Image 3" />
+                </swiper-slide>
+                <swiper-slide>
+                  <img src="/assets/dummyProduct.jpg" alt="Main Image 4" />
+                </swiper-slide>
+              </swiper-container>
+
+              <!-- Thumbnail Swiper -->
+              <swiper-container
+                class="mySwiper2"
+                space-between="10"
+                slides-per-view="4"
+                free-mode="true"
+                watch-slides-progress="true"
+              >
+                <swiper-slide>
+                  <img src="/assets/dummyProduct.jpg" alt="Thumb 1" />
+                </swiper-slide>
+                <swiper-slide>
+                  <img src="/assets/dummyProduct.jpg" alt="Thumb 2" />
+                </swiper-slide>
+                <swiper-slide>
+                  <img src="/assets/dummyProduct.jpg" alt="Thumb 3" />
+                </swiper-slide>
+                <swiper-slide>
+                  <img src="/assets/dummyProduct.jpg" alt="Thumb 4" />
+                </swiper-slide>
+              </swiper-container>
+            </div>
+          </div>
+          <!-- PRODUCT IMAGE END -->
+
+          <!-- PRODUCT DETAILS CONTAINER START -->
+          <div class="product-details-container">
+            <div class="product-review-sections">
+              <!-- REVIEW ICONS -->
+              <div class="product-review-icons">
+                <img src="/assets/star.svg" alt="star" class="star-icons" />
+                <img src="/assets/star.svg" alt="star" class="star-icons" />
+                <img src="/assets/star.svg" alt="star" class="star-icons" />
+                <img src="/assets/star.svg" alt="star" class="star-icons" />
+                <img src="/assets/star.svg" alt="star" class="star-icons" />
+              </div>
+              <!-- REVIEW ICONS END -->
+              <span class="review-title"> (675 Reviews) </span>
+            </div>
+            <!-- PRODUCT HEADING CONTAINER STRAT -->
+            <div class="product-heading-container">
+              <h1 class="product-heading">Remedy - The Blemish Set</h1>
+              <span class="price">$239</span>
+            </div>
+            <!-- PRODUCT HEADING CONTAINER END -->
+            <p class="product-desc">
+              Perfection is a state of mind. This collection is your gentle yet
+              effective antidote to breakouts. Violet Paste works overnight to
+              clarify and soothe blemishes.
+            </p>
+
+            <!-- PRODUCT INFO START -->
+            <div class="product-info-container">
+              <span class="product-info"
+                ><img
+                  src="/assets/mdi--hand-wash-outline.svg"
+                  alt=""
+                  class="product-reviwe-img"
+                />Tripler detoxifies efficently</span
+              >
+              <span class="product-info"
+                ><img
+                  src="/assets/mdi--hand-wash-outline.svg"
+                  alt=""
+                  class="product-reviwe-img"
+                />Deeply cleanses the skin</span
+              >
+              <span class="product-info"
+                ><img
+                  src="/assets/mdi--hand-wash-outline.svg"
+                  alt=""
+                  class="product-reviwe-img"
+                />lightly exfoliates to remove dirt</span
+              >
+              <span class="product-info"
+                ><img
+                  src="/assets/mdi--hand-wash-outline.svg"
+                  alt=""
+                  class="product-reviwe-img"
+                />Soothes blemishes overnight</span
+              >
+            </div>
+            <!-- PRODUCT INFO END -->
+
+            <!-- PRODUCT BUNDLE CONTAINER START -->
+            <span class="product-bundle-heading">Bundle & Save</span>
+            <div class="product-bundle-cards">
+              <!-- card-1  -->
+              <div class="product-bundle-card">
+                <div class="pack-info">
+                  <div class="pack-content">
+                    <span class="price-circle"></span>
+                    <span class="pack-title">1 Pack</span>
+                  </div>
+                  <span class="pack-price">$39</span>
+                </div>
+                <!-- PRODUCT SAVING CONTENT START -->
+                <div class="product-saving-container">
+                  <div class="product-saving-info">
+                    <span class="product-saving-title">You save $8</span>
+                    <span class="product-saving-price">$47</span>
+                  </div>
+                </div>
+                <!-- PRODUCT SAVING CONTENT END -->
+              </div>
+              <!-- CARD -2 -->
+              <div class="product-bundle-card active">
+                <div class="pack-info">
+                  <div class="pack-content">
+                    <span class="price-circle active-circle"></span>
+                    <span class="pack-title">2 Pack</span>
+                  </div>
+                  <span class="pack-price">$45</span>
+                </div>
+                <!-- PRODUCT SAVING CONTENT START -->
+                <div class="product-saving-container">
+                  <div class="product-saving-info">
+                    <span class="product-saving-title">You save $19</span>
+                    <span class="product-saving-price">$64</span>
+                  </div>
+                </div>
+                <!-- PRODUCT SAVING CONTENT END -->
+              </div>
+              <!-- CARD - 3 -->
+              <div class="product-bundle-card">
+                <div class="pack-info">
+                  <div class="pack-content">
+                    <span class="price-circle"></span>
+                    <span class="pack-title">3 Pack</span>
+                  </div>
+                  <span class="pack-price">$84</span>
+                </div>
+                <!-- PRODUCT SAVING CONTENT START -->
+                <div class="product-saving-container">
+                  <div class="product-saving-info">
+                    <span class="product-saving-title">You save $26</span>
+                    <span class="product-saving-price">$110</span>
+                  </div>
+                </div>
+                <!-- PRODUCT SAVING CONTENT END -->
+              </div>
+            </div>
+
+            <!-- ADD TO CART BTN -->
+            <button class="btn-primary">Add to Bag</button>
+
+            <!-- COMPANY POLICY -->
+            <div class="company-policy-container">
+              <!-- STOCK -->
+              <div class="company-policy-item">
+                <div class="icon-box">
+                  <img src="/assets/iconamoon--delivery.svg" alt="" class="" />
+                </div>
+                <!-- TITLE -->
+                <span class="company-policy-title">In stock</span>
+              </div>
+
+              <!-- Standard Delivery -->
+              <div class="company-policy-item">
+                <div class="icon-box">
+                  <img src="/assets/iconamoon--delivery.svg" alt="" class="" />
+                </div>
+                <!-- TITLE -->
+                <span class="company-policy-title">Standard Delivery</span>
+              </div>
+
+              <!-- Free Returns -->
+              <div class="company-policy-item">
+                <div class="icon-box">
+                  <img src="/assets/iconamoon--delivery.svg" alt="" class="" />
+                </div>
+                <!-- TITLE -->
+                <span class="company-policy-title">Free Returns</span>
+              </div>
+              <!-- 2 Free Samples -->
+              <div class="company-policy-item">
+                <div class="icon-box">
+                  <img src="/assets/iconamoon--delivery.svg" alt="" class="" />
+                </div>
+                <!-- TITLE -->
+                <span class="company-policy-title">2 Free Samples</span>
+              </div>
+            </div>
+            <!-- PRODUCT BUNDLE CONTAINER END -->
+
+            <!-- PRODUCT INFO-FAQ-CONTAINER -->
+            <div class="product-faq-container">
+              <div class="product-faq-content">
+                <span class="product-faq-title">Product Overview</span>
+                <img
+                  src="/assets/majesticons--chevron-down-line.svg"
+                  alt=""
+                  class=""
+                />
+              </div>
+              <!--  -->
+              <div class="product-faq-content">
+                <span class="product-faq-title">Key Benefits</span>
+                <img
+                  src="/assets/majesticons--chevron-down-line.svg"
+                  alt=""
+                  class=""
+                />
+              </div>
+              <!--  -->
+              <div class="product-faq-content">
+                <span class="product-faq-title">How To Use</span>
+                <img
+                  src="/assets/majesticons--chevron-down-line.svg"
+                  alt=""
+                  class=""
+                />
+              </div>
+              <!--  -->
+              <div class="product-faq-content">
+                <span class="product-faq-title">Ingredients</span>
+                <img
+                  src="/assets/majesticons--chevron-down-line.svg"
+                  alt=""
+                  class=""
+                />
+              </div>
+            </div>
+          </div>
+          <!-- PRODUCT DETAILS CONTAINER END -->
+        </div>
+      </div>
+    </section>
+    <!-- PRODUCT DETAILS END -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script>
+      const swiperThumbs = document.querySelector(".mySwiper2");
+      const swiperMain = document.querySelector(".mySwiper");
+
+      const thumbsSwiper = new Swiper(swiperThumbs, {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+
+      const mainSwiper = new Swiper(swiperMain, {
+        spaceBetween: 10,
+        navigation: true,
+        thumbs: {
+          swiper: thumbsSwiper,
+        },
+      });
+    </script>
   </body>
 </html>
