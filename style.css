@@ -624,6 +624,56 @@ swiper-container {
 
 /* ABOUT PRODUCT SECTION DESIGN END */
 
+/* SINGLE PRODUCT SECTION DESIGN START */
+.single-product-section {
+  margin-bottom: 135px;
+}
+
+.single-product-container {
+  display: grid;
+  grid-template-columns: 604px 606px;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-product-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: #f8f5ff;
+  padding: 105px 78px;
+}
+
+.single-product-tile {
+  color: var(--color-text-primary);
+  line-height: 140%;
+  font-weight: 600;
+  width: 340px;
+  margin-bottom: 13px;
+}
+
+.single-product-inner-title {
+  color: var(--color-primary);
+}
+
+.single-product-desc {
+  color: var(--color-paragraph);
+  line-height: 190%;
+  font-size: 16px;
+  letter-spacing: 0%;
+  margin-bottom: 27px;
+}
+
+.single-product-btn {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 10px 20px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+}
+/* SINGLE PRODUCT SECTION DESIGN END */
+
 /* BLEMISH SECITON END */
 .review-title,
 .product-desc,
@@ -646,7 +696,8 @@ swiper-container {
 .brand-subtitle,
 .bonas-title,
 .brand-heading,
-.blemish-sub-heading {
+.blemish-sub-heading,
+.single-product-btn {
   line-height: 100%;
   letter-spacing: 0%;
 }
@@ -776,6 +827,15 @@ swiper-container {
 
   .about-products-container {
     grid-template-columns: 1fr;
+  }
+
+  .single-product-container {
+    grid-template-columns: 1fr; /* stacks columns */
+    justify-content: center;
+  }
+
+  .single-product {
+    width: 100%;
   }
 }
 
