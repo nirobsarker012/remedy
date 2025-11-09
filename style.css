@@ -436,13 +436,23 @@ swiper-container {
 .brand-logo-heading {
   display: flex;
   justify-content: center;
-  margin-bottom: 65px;
 }
 
 .brand-heading {
   color: var(--color-text-primary);
   font-weight: 700;
   font-size: 35px;
+}
+
+.brand-logo-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 84px;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: auto;
+  width: 90%;
+  margin-top: 30px;
 }
 /* BRAND LOGO DESIGN END */
 
@@ -499,7 +509,7 @@ swiper-container {
     row-gap: 30px;
   }
 
-  .brand-heading {
+  .brand-heading-title {
     font-size: 44px;
     max-width: 800px;
   }
@@ -566,9 +576,14 @@ swiper-container {
     justify-content: center;
   }
 
-  .brand-heading {
+  .brand-heading-title {
     max-width: 660px;
     margin: 50px 0 34px 0;
+  }
+
+  .brand-logo-container {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
   }
 }
 
@@ -633,7 +648,7 @@ swiper-container {
     gap: 20px;
   }
 
-  .brand-heading {
+  .brand-heading-title {
     font-size: 30px;
     margin: 50px 0 28px 0;
   }
@@ -653,5 +668,11 @@ swiper-container {
 
   .brand-content-container {
     margin: 40px 0 40px 0;
+  }
+
+  .brand-logo-container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 20px;
   }
 }
