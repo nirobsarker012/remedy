@@ -511,6 +511,51 @@ swiper-container {
 
 /* BRAND VIDEO SECTION DESIGN END */
 
+/* BLEMISH SECTION DESIGN START */
+
+.blemish-heading-container {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 1035px;
+  margin-left: auto;
+}
+
+.blemish-heading {
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 0%;
+  font-size: 55px;
+  color: var(--color-text-primary);
+  margin-bottom: 34px;
+}
+
+.gentle-and-soothing-title {
+  font-weight: 700;
+}
+
+.blemish-sub-heading-content {
+  display: flex;
+  align-items: center;
+  column-gap: 17px;
+}
+
+.border-dashed {
+  width: 45px;
+  display: block;
+  height: 1px;
+  background-color: var(--color-primary);
+}
+
+.blemish-sub-heading {
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+/* BLEMISH SECITON END */
 .review-title,
 .product-desc,
 .product-info,
@@ -531,7 +576,8 @@ swiper-container {
 .product-faq-title,
 .brand-subtitle,
 .bonas-title,
-.brand-heading {
+.brand-heading,
+.blemish-sub-heading {
   line-height: 100%;
   letter-spacing: 0%;
 }
@@ -649,6 +695,11 @@ swiper-container {
     width: 70px;
     height: 70px;
   }
+
+  .blemish-heading {
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
 }
 
 /* Mobile */
@@ -747,5 +798,10 @@ swiper-container {
 
   .brand-video-section {
     padding: 50px 0;
+  }
+
+  .blemish-heading {
+    font-size: 30px;
+    margin-bottom: 20px;
   }
 }
