@@ -456,6 +456,61 @@ swiper-container {
 }
 /* BRAND LOGO DESIGN END */
 
+/* BRAND VIDEO SECTION DESIGN START */
+
+.brand-video-section {
+  padding: 135px 0;
+}
+
+.brand-video {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.brand-video-file {
+  width: 100%;
+  height: 542px;
+  display: block;
+  object-fit: cover;
+}
+
+.brand-play-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.play-btn-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.brand-play-btn:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+  opacity: 0.9;
+}
+
+.brand-video.playing .brand-play-btn {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* BRAND VIDEO SECTION DESIGN END */
+
 .review-title,
 .product-desc,
 .product-info,
@@ -585,6 +640,15 @@ swiper-container {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 50px;
   }
+
+  .brand-video-section {
+    padding: 70px 0;
+  }
+
+  .brand-play-btn {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 /* Mobile */
@@ -674,5 +738,14 @@ swiper-container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 30px;
     row-gap: 20px;
+  }
+
+  .brand-play-btn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .brand-video-section {
+    padding: 50px 0;
   }
 }
