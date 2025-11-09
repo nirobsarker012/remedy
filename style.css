@@ -335,7 +335,7 @@ swiper-container {
 }
 
 /* BRAND SECTION DESIGN START */
-.brand-heading {
+.brand-heading-title {
   font-weight: 600;
   font-size: 55px;
   line-height: 140%;
@@ -432,24 +432,41 @@ swiper-container {
 }
 /* BRAND SECTION DESIGN END */
 
-.review-title
-  .product-desc
-  .product-info
-  .product-bundle-heading
-  .product-saving-title {
+/* BRAND LOGO DESIGN START */
+.brand-logo-heading {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 65px;
+}
+
+.brand-heading {
+  color: var(--color-text-primary);
+  font-weight: 700;
+  font-size: 35px;
+}
+/* BRAND LOGO DESIGN END */
+
+.review-title,
+.product-desc,
+.product-info,
+.product-bundle-heading,
+.product-saving-title {
   color: var(--color-paragraph);
-} /* Line height */
-.product-saving-title
-  .pack-title
-  .product-bundle-heading
-  .product-info
-  .price
-  .product-saving-price
-  .btn-primary
-  .company-policy-title
-  .product-faq-title
-  .brand-subtitle
-  .bonas-title {
+}
+
+/* Line height */
+.product-saving-title,
+.pack-title,
+.product-bundle-heading,
+.product-info,
+.price,
+.product-saving-price,
+.btn-primary,
+.company-policy-title,
+.product-faq-title,
+.brand-subtitle,
+.bonas-title,
+.brand-heading {
   line-height: 100%;
   letter-spacing: 0%;
 }
