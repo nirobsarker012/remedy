@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Harmonia Sans W01 Regular";
+  /* border: 1px solid rebeccapurple; */
 }
 
 :root {
@@ -674,6 +675,43 @@ swiper-container {
 }
 /* SINGLE PRODUCT SECTION DESIGN END */
 
+/* REVIEW SECTION DESIGN START */
+
+.review-section {
+  margin-bottom: 135px;
+}
+
+.review-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-right: 72px;
+  border-right: 1px solid var(--color-paragraph);
+}
+
+.review-active {
+  border: none;
+}
+
+.review-counter {
+  color: var(--color-primary);
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+.review-title {
+  font-size: 20px;
+  color: var(--color-paragraph);
+}
+/* REVIEW SECTION DESIGN END */
+
 /* BLEMISH SECITON END */
 .review-title,
 .product-desc,
@@ -697,7 +735,9 @@ swiper-container {
 .bonas-title,
 .brand-heading,
 .blemish-sub-heading,
-.single-product-btn {
+.single-product-btn,
+.review-counter,
+.review-title {
   line-height: 100%;
   letter-spacing: 0%;
 }
@@ -745,6 +785,18 @@ swiper-container {
   .bonas-desc {
     max-width: 400px;
     margin-inline: auto;
+  }
+
+  .brand-logo-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .single-product-container {
+    grid-template-columns: 504px 506px;
+  }
+
+  .single-product-content-container {
+    padding: 90px 50px;
   }
 }
 
@@ -830,12 +882,23 @@ swiper-container {
   }
 
   .single-product-container {
-    grid-template-columns: 1fr; /* stacks columns */
+    grid-template-columns: 1fr;
     justify-content: center;
   }
 
   .single-product {
     width: 100%;
+  }
+
+  .review-container {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  .review-content {
+    padding-left: 0;
+    padding-bottom: 30px;
+    border-right: none;
   }
 }
 
