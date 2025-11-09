@@ -1,4 +1,5 @@
 @import url(https://db.onlinewebfonts.com/c/0dd7edde115ef38e7def4b16e93b5884?family=Harmonia+Sans+W01+Regular);
+@import url("https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap");
 
 * {
   margin: 0;
@@ -16,6 +17,10 @@
   --color-paragraph: rgba(46, 42, 57, 0.75);
   --color-heading: rgba(46, 42, 57, 0.35);
   --color-background: #fcfbff;
+}
+
+.font-asul {
+  font-family: "Asul", serif;
 }
 
 .container {
@@ -623,6 +628,12 @@ swiper-container {
   top: 3px;
 }
 
+/* hide swiper slider arrow */
+swiper-container::part(button-next),
+swiper-container::part(button-prev) {
+  display: none !important;
+}
+
 /* ABOUT PRODUCT SECTION DESIGN END */
 
 /* SINGLE PRODUCT SECTION DESIGN START */
@@ -836,6 +847,84 @@ swiper-container {
 
 /*  AUTH SECTION DESIGN END  */
 
+/* FAQ SECTION DESIGN START */
+
+.faq-section {
+  margin-bottom: 135px;
+}
+
+.faq-heading {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 65px;
+}
+
+.faq-heading-title {
+  font-weight: bold;
+  color: var(--color-text-primary);
+  font-size: 35px;
+}
+
+.faq-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.faq-contents {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 100%;
+  max-width: 590px;
+}
+
+.accordation:faq-active {
+  background: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.accordation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: transparent;
+  color: var(--color-text-primary);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.6;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  border-bottom: 1px solid #ddd;
+}
+
+.accordation img {
+  transition: transform 0.3s ease;
+}
+
+.faq-content.faq-active .accordation img {
+  transform: rotate(180deg);
+}
+
+.pannel {
+  display: none;
+  color: var(--color-text-secondary);
+  line-height: 190%;
+  letter-spacing: 0%;
+  padding: 12px 0 0 0;
+}
+
+.faq-content.faq-active .pannel {
+  display: block;
+}
+
+/* FAQ SECTION DESIGN END */
+
 /* TRY US SECTION DESIGN START */
 
 .try-us-section {
@@ -914,6 +1003,7 @@ swiper-container {
 .blemish-sub-heading,
 .single-product-btn,
 .review-counter,
+.faq-heading-title,
 .review-title,
 .try-us-heading,
 .try-us-content-title {
@@ -1151,6 +1241,23 @@ swiper-container {
   .try-us-container {
     max-width: 70px 0;
   }
+
+  .faq-section {
+    margin-bottom: 70px;
+  }
+
+  .faq-container {
+    flex-direction: column;
+    row-gap: 14px;
+  }
+
+  .faq-heading {
+    justify-content: center;
+  }
+
+  .faq-heading {
+    margin-bottom: 40px;
+  }
 }
 
 /* Mobile */
@@ -1327,5 +1434,13 @@ swiper-container {
 
   .try-us-item-container {
     row-gap: 30px;
+  }
+
+  .faq-section {
+    margin-bottom: 50px;
+  }
+
+  .faq-heading {
+    margin-bottom: 34px;
   }
 }
