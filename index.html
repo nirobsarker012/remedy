@@ -824,9 +824,55 @@
  <!-- Try Us Risk Free SECTIONS END -->
 
    <!-- REVIEW SECTION START -->
-      <section class="review-section">
+      <section class="customer-review-section">
          <div class="container">
-          
+          <div class="top-customer-rating-container">
+            <!-- TOP HEADER RATING CONTENT -->
+             <div class="top-customer-header-rating-content">
+              <div class="top-customer-rating-number-container">
+                <span class="top-customer-rating-number">5.00</span>
+                <!-- REVIEW ICON -->
+                 <div class="top-customer-review-icon-container">
+                  <img src="/assets/black_star.svg" alt="review-star" class="review-star">
+                  <img src="/assets/black_star.svg" alt="review-star" class="review-star">
+                  <img src="/assets/black_star.svg" alt="review-star" class="review-star">
+                  <img src="/assets/black_star.svg" alt="review-star" class="review-star">
+                  <img src="/assets/black_star.svg" alt="review-star" class="review-star">
+                 </div>
+                </div>
+                <!-- REVIEW SUBTITLE -->
+                 <p class="top-customer-review-sub-desc">Based on 3 reviews</p>
+             </div>
+             <button class="write-review-btn">Write Review</button>
+          </div>
+
+          <!-- REVIEW SEACHBAR CONTAINER -->
+           <div class="review-searchbar-container">
+            <!--  -->
+            <div class="search-option">
+              <div class="search-option-minimal">
+               <select id="sort">
+                <option value="" selected disabled>Sort</option>
+                 <option value="a-b">A–B</option>
+                <option value="c-f">C–F</option>
+               </select>
+           </div>
+
+        <!-- SEARCH INPUT -->
+         <div class="search-input">
+          <input type="text" name="" id="" placeholder="Seach" class="search-input-feild">
+          <div class="search-icon">
+            <img src="/assets/search-icon.svg" alt="" class="">
+          </div>
+         </div>
+            </div>
+
+            <!-- SEARCH TABS CONTAINER -->
+             <div class="search-tabs-container">
+              <button class="search-btn">Product Reviews</button>
+              <button class="search-btn btn-inactive">Questions</button>
+             </div>
+           </div>
          </div>
          </section>
               <!-- REVIEW SECTION END -->
@@ -846,6 +892,7 @@
 
       const mainSwiper = new Swiper(swiperMain, {
         spaceBetween: 10,
+        slidesPerView: 1,
         navigation: true,
         thumbs: {
           swiper: thumbsSwiper,

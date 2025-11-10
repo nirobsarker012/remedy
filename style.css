@@ -991,6 +991,143 @@ swiper-container::part(button-prev) {
 }
 /* TRY US SECTION DESIGN END */
 
+/* REVIEW SECTION DESIGN START */
+.top-customer-rating-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.top-customer-header-rating-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.top-customer-rating-number-container {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.top-customer-review-icon-container {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+}
+
+.top-customer-review-icon-container img {
+  width: 20px;
+}
+
+.top-customer-rating-number {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.top-customer-review-sub-desc {
+  color: var(--color-paragraph);
+  font-size: 14px;
+}
+
+.write-review-btn {
+  background: #0e1311;
+  color: white;
+  padding: 14px 12px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.review-searchbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.review-searchbar-container {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.search-option-minimal select {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  color: var(--color-text-primary);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#sort {
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+.search-option {
+  display: flex;
+  align-items: center;
+  column-gap: 26px;
+}
+
+.search-input {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  column-gap: 6px;
+  position: relative;
+}
+
+.search-input-feild {
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color-text-primary);
+}
+
+.search-icon img {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 20px;
+}
+
+.search-tabs-container {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.search-btn {
+  font-size: 18px;
+  color: var(--color-text-primary);
+  outline: none;
+  background: transparent;
+  border-top: none;
+  border-right: none;
+  border-bottom: 3px solid var(--color-text-primary);
+  border-left: none;
+  outline: none;
+  font-weight: 600;
+  cursor: pointer;
+  padding-bottom: 4px;
+}
+
+.btn-inactive {
+  border: none;
+}
+
+/* REVIEW SECTION DESIGN END */
+
 .review-title,
 .product-desc,
 .product-info,
@@ -1018,7 +1155,13 @@ swiper-container::part(button-prev) {
 .faq-heading-title,
 .review-title,
 .try-us-heading,
-.try-us-content-title {
+.try-us-content-title,
+.top-customer-rating-number,
+.top-customer-review-sub-desc,
+.write-review-btn,
+.search-option-minimal select,
+.search-input-feild,
+.search-btn {
   line-height: 100%;
   letter-spacing: 0%;
 }
@@ -1453,5 +1596,26 @@ swiper-container::part(button-prev) {
 
   .faq-heading {
     margin-bottom: 34px;
+  }
+
+  .top-customer-rating-container {
+    flex-direction: column;
+    align-items: start;
+    row-gap: 12px;
+  }
+
+  .write-review-btn {
+    padding: 10px 12px;
+  }
+
+  .mySwiper {
+    width: 100%;
+    height: auto;
+    max-width: 88vw;
+  }
+
+  .review-searchbar-container {
+    flex-wrap: wrap;
+    row-gap: 14px;
   }
 }
