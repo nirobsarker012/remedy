@@ -1680,6 +1680,11 @@ swiper-container::part(button-prev) {
   .blemish-slide-image {
     height: 400px;
   }
+
+  .review-container > * {
+    padding: 0;
+    border: none;
+  }
 }
 
 /* Mobile */
