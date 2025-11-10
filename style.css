@@ -634,7 +634,7 @@ swiper-container {
 }
 
 .product-content li::before {
-  content: url(/assets/mdi_tick-circle-outline.svg);
+  content: url(/assets/tickmark.svg);
   position: absolute;
   left: 0;
   top: 3px;
